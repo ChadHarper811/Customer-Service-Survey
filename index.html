@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Customer Experience Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve our customer experience
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="First Last"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Zip Code <span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="zip code"
+            id="number"
+            min="00501"
+            max="99950"
+            class="form-control"
+            placeholder="Zip Code"
+          />
+        </div>
+        <div class="form-group">
+          <p>How did you hear about us?</p>
+          <select id="dropdown" name="referrer" class="form-control" required>
+            <option disabled selected value>Select one</option>
+            <option value="website">Ad - Website</option>
+            <option value="social">Ad - Social media</option>
+            <option value="print">Ad - Print</option>
+            <option value="tv">Ad - TV</option>
+            <option value="staff">Staff</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What was the favorite part of your experience?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label>
+            <input
+              name="fav-part"
+              value="game-play"
+              type="checkbox"
+              class="input-checkbox"
+            />Game Play
+          </label>
+
+          <label>
+            <input
+              name="fav-part"
+              value="food"
+              type="checkbox"
+              class="input-checkbox"
+            />Food
+          </label>
+
+          <label>
+            <input
+              name="fav-part"
+              value="drinks"
+              type="checkbox"
+              class="input-checkbox"
+            />Drinks
+          </label>
+
+          <label>
+            <input
+              name="fav-part"
+              value="guest-service"
+              type="checkbox"
+              class="input-checkbox"
+            />Guest Service
+          </label>
+
+          <label>
+            <input
+              name="fav-part"
+              value="games"
+              type="checkbox"
+              class="input-checkbox"
+            />Lounge Games (pool table, tic tac toe, etc)
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments about your experience or suggestions for improvement?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment/suggestion here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>For filling out our survey we would like to give you a credit toward your next visit</p>
+          <p>Promo Credit:</p>
+          <label>
+            <input
+              name="promo"
+              value="credit-email"
+              type="radio"
+              class="input-radio"
+            />$10 credit & promo email sign up</label
+          >
+
+          <label
+            ><input
+              name="promo"
+              value="credit"
+              type="radio"
+              class="input-radio"
+            />$10 gameplay credit toward next visit</label
+          >
+
+          <label
+            ><input
+              name="promo"
+              value="opt-out"
+              type="radio"
+              class="input-radio"
+            />No thanks - opt outt</label
+          >
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
