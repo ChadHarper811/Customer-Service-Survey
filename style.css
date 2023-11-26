@@ -1,42 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
-
+/* Root colors */
 :root {
-  --color-white: #f3f3f3;
-  --color-darkblue: #1b1b32;
-  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-  --color-green: #37af65;
+  --white: f0f0f0;
+  --lightblue: rgb(241, 249, 255, 1);
+  --blue: rgb(0, 4, 255, 1);
+  --darkblue: rgb(5, 7, 134, 1);
+  --agua: rgb(0, 255, 255, 1);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
+/* Main styling */
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--color-white);
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #232370;
+  background-color: var(--white);
 }
+
+.main {
+  width: 100%;
+  margin: 100px auto 0 auto;
+}
+
+@media screen and (min-width: 610px) {
+  .main {
+    max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    max-width: 780px;
+  }
+}
+
 
 h1 {
-  font-weight: 400;
-  line-height: 1.2;
+font-family: 'Trebuchet MS', sans-serif ;
 }
 
-p {
-  font-size: 1.125rem;
+.desc {
+  font-style: italic;
 }
 
-h1,
-p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
 
 label {
   display: flex;
@@ -45,74 +52,25 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input,
-button,
-select,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+.hint {
+margin-left: 3px;
+  font-size: 14px;
 }
 
-button {
-  border: none;
-}
-
-.container {
-  width: 100%;
-  margin: 3.125rem auto 0 auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-.header {
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
-}
-
-.description {
-  font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-.clue {
-  margin-left: 0.25rem;
-  font-size: 0.9rem;
-  color: #e4e4e4;
-}
-
-.text-center {
+.txt-center {
   text-align: center;
 }
 
 /* form */
 
 form {
-  background: var(--color-darkblue-alpha);
+  background: var(--lightblue);
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
 }
 
-@media (min-width: 480px) {
-  form {
-    padding: 2.5rem;
-  }
-}
-
-.form-group {
-  margin: 0 auto 1.25rem auto;
+.form-section {
+  margin: 0 auto 1rem auto;
   padding: 0.25rem;
 }
 
@@ -150,12 +108,11 @@ form {
   resize: vertical;
 }
 
-.submit-button {
+.submit-btn {
   display: block;
   width: 100%;
   padding: 0.75rem;
   background: var(--color-green);
-  color: inherit;
   border-radius: 2px;
   cursor: pointer;
 }
