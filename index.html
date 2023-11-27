@@ -8,8 +8,10 @@
   <body>
     <div class="main">
       <header class="header">
-        <h1 id="title" class="txt-center"><span class="title-blue txt-center">CUSTOMER</span> <span class="title-aqua txt-center">EXPERIENCE</span> <span class="title-blue txt-center">SURVEY FORM</span> </h1>
-        <p id="description" class="desc txt-center">
+        <div class="title-blue txt-center top"><h1 id="title">CUSTOMER</div>
+        <div class="title-aqua txt-center"><h1 id="title2">EXPERIENCE</div>
+        <div class="title-blue txt-center bottom"><h1 id="title3">SURVEY FORM</div>
+        <p id="description" class="desc txt-center label-bold">
           Thank you for taking the time to help us improve our customer experience
         </p>
       </header>
@@ -42,23 +44,23 @@
         <div class="form-section">
           <p class="label-bold"> What was the favorite part of your experience? <span class="hint">(Check all that apply)</span> </p>
 
-          <label>
+          <label class="blue label-bold">
             <input name="fav-part" value="game-play" type="checkbox" class="input-checkbox"/> Game Play
           </label>
 
-          <label>
+          <label class="aqua label-bold">
             <input name="fav-part" value="food" type="checkbox" class="input-checkbox" /> Food
           </label>
 
-          <label>
+          <label class="blue label-bold">
             <input name="fav-part" value="drinks" type="checkbox" class="input-checkbox" /> Drinks
           </label>
 
-          <label>
+          <label class="aqua label-bold">
             <input name="fav-part" value="guest-service" type="checkbox" class="input-checkbox" /> Guest Service
           </label>
 
-          <label>
+          <label class="blue label-bold">
             <input name="fav-part" value="games" type="checkbox" class="input-checkbox" /> Lounge Games (Pool table, tic tac toe, etc)
           </label>
         </div>
@@ -69,8 +71,8 @@
         </div>
 
         <div class="form-section">
-          <p>For filling out our survey we would like to give you a credit toward your next visit</p>
-          <p>Promo Credit:</p>
+          <p class="label-bold">For filling out our survey we would like to give you a credit toward your next visit</p>
+          <p class="label-bold text-aqua txt-center">Promo Credit:</p>
 
           <label>
             <input name="promo" value="credit-email" type="radio" class="input-radio" checked />$10 credit & promo email sign up
