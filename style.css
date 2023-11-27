@@ -8,7 +8,7 @@
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Main styling */
@@ -89,40 +89,40 @@ form {
 }
 
 .input-checkbox {
-display: inline-block;
-margin-right: 10px;
-min-height: 15px;
-min-width: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  min-height: 15px;
+  min-width: 15px;
 }
 
 .input-textarea {
-min-height: 100px;
-width: 100%;
-padding: 10px;
-outline: 0;
-resize: vertical;
+  min-height: 100px;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  resize: vertical;
 }
 
 .input-textarea:focus {
-box-shadow: 0 0 0 2px var(--lightblue),
-0 0 0 4px var(--aqua);
+  box-shadow: 0 0 0 2px var(--lightblue),
+  0 0 0 4px var(--aqua);
 }
 
 .submit-btn {
-font-family: 'Trebuchet MS', sans-serif ;
-font-size: 20px;
-display: block;
-width: 60%;
-margin: 0 auto 0 auto;
-padding: 0.75rem;
-color: var(--white);
-background: var(--blue);
-border-radius: 50px;
-cursor: pointer;
-transition-duration: .3s;
+  font-family: 'Trebuchet MS', sans-serif ;
+  font-size: 20px;
+  display: block;
+  width: 60%;
+  margin: 0 auto 0 auto;
+  padding: 0.75rem;
+  color: var(--white);
+  background: var(--blue);
+  border-radius: 50px;
+  cursor: pointer;
+  transition-duration: .3s;
 }
 
 .submit-btn:hover {
-background-color: var(--darkblue);
-color: var(--aqua);
+  background-color: var(--darkblue);
+  color: var(--aqua);
 }
