@@ -1,16 +1,17 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" >
     <link rel="stylesheet" href="style.css" />
+    <title>Customer Experience Survey Form</title>
   </head>
   <body>
     <div class="main">
       <header class="header">
-        <div class="title-blue txt-center top"><h1 id="title">CUSTOMER</div>
-        <div class="title-aqua txt-center"><h1 id="title2">EXPERIENCE</div>
-        <div class="title-blue txt-center bottom"><h1 id="title3">SURVEY FORM</div>
+        <div class="title-blue txt-center top"><h1 id="title">CUSTOMER</h1></div>
+        <div class="title-aqua txt-center"><h1 id="title2">EXPERIENCE</h1></div>
+        <div class="title-blue txt-center bottom"><h1 id="title3">SURVEY FORM</h1></div>
         <p id="description" class="desc txt-center label-bold">
           Thank you for taking the time to help us improve our customer experience
         </p>
@@ -29,16 +30,16 @@
           <input type="number" name="zip code" id="number" min="00501" max="99950" class="form-input" placeholder="Zip Code" />
         </div>
         <div class="form-section">
-          <p class="label-bold">How did you hear about us?</p>
-          <select id="dropdown" name="referrer" class="form-input" required>
-            <option disabled selected value>Select one</option>
-            <option value="website">Ad - Website</option>
-            <option value="social">Ad - Social media</option>
-            <option value="print">Ad - Print</option>
-            <option value="tv">Ad - TV</option>
-            <option value="staff">Staff</option>
-            <option value="other">Other</option>
-          </select>
+          <label for="dropdown" class="label-bold">How did you hear about us?</label>
+            <select id="dropdown" name="referrer" class="form-input" required>
+              <option disabled selected value>Select one</option>
+              <option value="website">Ad - Website</option>
+              <option value="social">Ad - Social media</option>
+              <option value="print">Ad - Print</option>
+              <option value="tv">Ad - TV</option>
+              <option value="staff">Staff</option>
+              <option value="other">Other</option>
+            </select>
         </div>
 
         <div class="form-section">
@@ -61,12 +62,12 @@
           </label>
 
           <label class="blue label-bold">
-            <input name="fav-part" value="games" type="checkbox" class="input-checkbox" /> Lounge Games (Pool table, tic tac toe, etc)
+            <input name="fav-part" value="games" type="checkbox" class="input-checkbox" /> Lounge Games (Pool table, tic-tac-toe, etc)
           </label>
         </div>
 
         <div class="form-section">
-          <p class="label-bold">Any comments about your experience or suggestions for improvement?</p>
+          <label for="comments" class="label-bold">Any comments about your experience or suggestions for improvement?</label>
           <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment/suggestion here..." ></textarea>
         </div>
 
@@ -83,7 +84,7 @@
           </label>
 
           <label
-            ><input name="promo" value="opt-out" type="radio" class="input-radio aqua" /> No thanks - opt out </label>
+            ><input name="promo" value="opt-out" type="radio" class="input-radio aqua" /> No Thanks - opt out </label>
         </div>
 
         <div class="form-section">
